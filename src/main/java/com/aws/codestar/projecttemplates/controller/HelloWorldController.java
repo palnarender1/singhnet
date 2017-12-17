@@ -11,7 +11,7 @@ import com.aws.codestar.projecttemplates.Response;
  * Basic Spring web service controller that handles all GET requests.
  */
 @RestController
-@RequestMapping("/")
+@RequestMapping("/services")
 public class HelloWorldController {
 
     private static final String MESSAGE_FORMAT = "Welcome %s!";
