@@ -14,7 +14,7 @@ import com.aws.codestar.projecttemplates.Response;
 @RequestMapping("/")
 public class HelloWorldController {
 
-    private static final String MESSAGE_FORMAT = "Hello %s!";
+    private static final String MESSAGE_FORMAT = "Welcome %s!";
 
     @RequestMapping(method = RequestMethod.GET)
     public Response helloWorldGet(@RequestParam(value = "name", defaultValue = "World") String name) {
