@@ -20,7 +20,7 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
  * @EnableAutoConfiguration
  * @ComponentScan
  */
-@SpringBootApplication(scanBasePackages = { "com.aws" })
+@SpringBootApplication(scanBasePackages = { "com.aws"})
 public class Application extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
