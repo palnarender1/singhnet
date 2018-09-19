@@ -1,5 +1,6 @@
 package com.aws.codestar.projecttemplates.controller;
 
+import org.springframework.mail.MailSender;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,6 +16,7 @@ import com.aws.codestar.projecttemplates.Response;
 public class HelloWorldController {
 
     private static final String MESSAGE_FORMAT = "Welcome %s!";
+   
 
     @RequestMapping(method = RequestMethod.GET)
     public Response helloWorldGet(@RequestParam(value = "name", defaultValue = "World") String name) {
@@ -25,4 +27,7 @@ public class HelloWorldController {
     public Response helloWorldPost(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new Response(String.format(MESSAGE_FORMAT, name));
     }
+    
+    
+   
 }
